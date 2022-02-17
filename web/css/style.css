@@ -1,12 +1,5 @@
 /* all pages */
 
-html, body {
-
-    background-color: #a31919;  
-    
-    
-}
-
 footer {
   margin: 20px;
   font-size: 12px;
@@ -81,3 +74,6 @@ footer {
   float: left;
 }
 
+body {
+
+    background-color: #d27979;  
