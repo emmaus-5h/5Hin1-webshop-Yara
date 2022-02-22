@@ -8,11 +8,14 @@ CREATE TABLE products (
   name VARCHAR(255),
   description TEXT,
   price NUMERIC(10, 2)
-  model VARCHAR(255)
-  
-);
+  model VARCHAR(255),
+  beoordeling_id INTEGER(20)
+  );
 
-  
+  CREATE TABLE beoordeeling (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(15),
+  );
 
 --
 -- populate with data
@@ -30,3 +33,6 @@ insert into products (name, description, code, price) values ('Aqua blauw', 'Dui
 insert into products (name, description, code, price) values ('Kiss for Corliss, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14);
 insert into products (name, description, code, price) values ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
 
+insert into beoordeling (name) values ('goed');
+insert into beoordeling (name) values ('Middelmatig'); 
+insert into beoordeling (name) values ('slecht');
