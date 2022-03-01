@@ -26,12 +26,12 @@ CREATE TABLE products (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, price) values ('French Film', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id.', '816905633-0', 10.5);
-insert into products (name, description, code, price) values ('geel met bij patroon', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '077030122-3', 11);
-insert into products (name, description, code, price) values ('Zwart met bliksem', 'Pellentesque at nulla. Suspendisse potenti.', '445924201-X', 13.5);
-insert into products (name, description, code, price) values ('Aqua blauw', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 13.5);
-insert into products (name, description, code, price) values ('Kiss for Corliss, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14);
-insert into products (name, description, code, price) values ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
+insert into products (name, description, code, price, model) values ('Marmer Terquoise', 'Dit hoesje is heel populair onder jongeren. Het was de best verkochte hoesje van 2021.', '816905633-0', 10.5, 'iPhone 11 ');
+insert into products (name, description, code, price, model) values ('Beige Bees', 'Vrolijk hoesje met beige achtergrond en bijen.', '077030122-3', 11, 'iPhone 11 ');
+insert into products (name, description, code, price, model) values ('Broken Black', 'Zwart is normaal basic, broken Black hoesje niet.', '445924201-X', 13.5, 'iPhone 11 ');
+insert into products (name, description, code, price, model) values ('Aqua Sea Blue', 'Met dit hoesje kijk je door je ogen door de zee', '693155505-7', 13.5, 'iPhone 11 ');
+insert into products (name, description, code, price, model) values ('Happy Autumn', 'De vormen geven een warme gevoel en de kleuren een herfstgevoel', '686928463-6', 14, 'iPhone 11 ');
+insert into products (name, description, code, price, model) values ('Special Honeycomb', 'Speciale honingraat met speciale kleuren.', '492662523-7', 14, 'iPhone 11 ');
 
 insert into beoordeling (name) values ('goed');
 insert into beoordeling (name) values ('Middelmatig'); 
