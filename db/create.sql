@@ -17,6 +17,12 @@ CREATE TABLE products (
   name VARCHAR(255)
 
   );
+
+  CREATE TABLE kleuren (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(255)
+
+  );
   
  
 
@@ -36,6 +42,12 @@ insert into products (name, description, code, price, model, productiejaar_id) v
 insert into products (name, description, code, price, model, productiejaar_id) values ('Happy Autumn', 'De vormen geven een warme gevoel en de kleuren een herfstgevoel', '686928463-6', 14, 'iPhone 11 ' , 2);
 insert into products (name, description, code, price, model, productiejaar_id) values ('Special Honeycomb', 'Speciale honingraat met speciale kleuren.', '492662523-7', 14, 'iPhone 11 ' , 1);
 
-insert into productiejaren (name) values ('2022');
+insert into productiejaren (name) values ('2020');
 insert into productiejaren (name) values ('2021'); 
 insert into productiejaren (name) values ('2022');
+
+insert into kleuren (name) values ('overige');
+insert into kleuren (name) values ('beige');
+insert into kleuren (name) values ('blauw');
+insert into kleuren (name) values ('geel');
+insert into kleuren (name) values ('terquoise');
