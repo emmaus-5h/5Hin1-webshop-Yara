@@ -29,6 +29,8 @@ CREATE TABLE products (
   name VARCHAR(255)
   );
 
+  
+  
 --
 -- populate with data
 --
@@ -59,3 +61,19 @@ insert into kleuren (name) values ('zwart');
 insert into rating (name) values ('⭐⭐⭐');
 insert into rating (name) values ('⭐⭐');
 insert into rating (name) values ('⭐');
+
+
+  SELECT * FROM products
+  JOIN productiejaren ON 
+  productiejaren.name = productiejaar.id;
+
+  SELECT * FROM products
+  JOIN kleuren ON 
+  kleuren.name = kleuren.id;
+
+  SELECT * FROM products
+  JOIN rating ON 
+  rating.name = rating.id;
+ 
+
+  
