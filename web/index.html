@@ -61,6 +61,7 @@
 						<li><span class="propert-name">Model: </span><span class="product_model"></span></li>
             	<li><span class="propert-name">Rating: </span><span class="product_rating"></span></li>
             <li><span class="propert-name">Kleuren: </span><span class="product_kleuren"></span></li>
+            <li><span class="propert-name">Productiejaar: </span><span class="product_productiejaar"></span></li>
             <li><span class="propert-name">Prijs: </span><span class="product_price"></span></li>
 						<li><span class="propert-name">Code: </span><span class="product_code"></span></li>
 					</ul>
@@ -129,6 +130,7 @@
  clone.querySelector(".product_model").textContent =`${product.model}` 
               clone.querySelector(".product_rating").textContent =`${product.rating}` 
               clone.querySelector(".product_kleuren").textContent =`${product.kleuren}`
+              clone.querySelector(".product_productiejaar").textContent =`${product.productiejaar}`
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
               clone.querySelector(".product_code").textContent = product.code
               clone.querySelector(".product_id").value = product.id
