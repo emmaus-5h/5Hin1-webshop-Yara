@@ -29,6 +29,10 @@ CREATE TABLE products (
   name VARCHAR(255)
   );
 
+SELECT
+FROM 
+JOIN  ON
+ 
   
 --
 -- populate with data
