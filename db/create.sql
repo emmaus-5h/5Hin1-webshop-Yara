@@ -29,9 +29,11 @@ CREATE TABLE products (
   name VARCHAR(255)
   );
 
-SELECT
-FROM 
-JOIN  ON
+SELECT * 
+FROM products
+JOIN productiejaar ON products.productiejaar_id = productsjaar.id 
+JOIN kleuren ON kleuren.id = products.kleuren_id 
+JOIN rating ON rating.id = products.rating_id;
  
   
 --
