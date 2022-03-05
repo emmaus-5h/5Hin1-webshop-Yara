@@ -74,14 +74,17 @@ function getProducts(request, response) {
   console.log('API verstuurt /api/products/')
 }
 
+
 function getProductById(request, response) {
   console.log('API ontvangt /api/products/:id', request.query)
   let data = []
   const product_id = parseInt(request.params.id)
-  const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price FROM products WHERE id = ?')
+  const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price, products.model AS model, productiejaar_id AS productiejaar, kleuren_id  AS kleuren, rating_id AS rating FROM products WHERE id = ?')
   data = sqlOpdracht.all(product_id)
   response.status(200).json(data[0])
 }
+
+
 
 /*
 const getRelatedProductsById = (request, response) => {
