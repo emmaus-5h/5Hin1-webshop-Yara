@@ -9,30 +9,29 @@ html, body {
     font-family: cursive ;
 }
 
-img.fotoRechts {
-    float:right;
-    margin-right: 30px;
-    width: 200px;
-   padding: 10px ; 
-  border-style: dotted;
-  border-width: 1em;
-  border-color: #f2bae3; 
-}
-
-
-
-.tekstRechts {
-  float: right;
-  width: 400px;
-  margin-right: 30px;
-  border-style: dotted;
-  border-width: 1em;
-  border-color: #f2bae3;
-  }
-
 img.fotoMidden {
     float:center;
-    margin-right: 110px;
+    margin-right: 30px;
+    width: 200px;
+ margin-right: 250px;
+  margin-left: 305px;
+  margin-bottem: 150px;
+}
+
+.tekstLinks {
+  float: center;
+  width: 400px;
+  margin-right: 250px;
+  margin-left: 355px;
+  margin-bottem: 150px;
+  border-style: double;
+  border-width: 1em;
+  border-color: #ecbaf2; 
+  }
+
+img.fotoRechts {
+    float:center;
+    margin-right: 10px;
     width: 200px ;
 
 footer {
