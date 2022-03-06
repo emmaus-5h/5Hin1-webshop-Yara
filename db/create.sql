@@ -83,10 +83,10 @@ SELECT productiejaren.id, productiejaren.name FROM productiejaren
 INNER JOIN products
 ON productiejaren.id = products.productiejaar_id
 
-  /* aangezien de concole bij 2 van bij elkaargevoegde tabellen error geeft, zet ik hem als commentaar neer*/
+  /* aangezien de console bij 2 van bij elkaargevoegde tabellen error geeft, zet ik hem als commentaar neer*/
 
   /*
-  SELECT productiejaren.id, productiejaren.name FROM productiejaren
+  SELECT rating.id, rating.name FROM rating
 INNER JOIN products
-ON productiejaren.id = products.productiejaar_id
+ON rating.id = products.rating_id
 */
