@@ -29,6 +29,8 @@ CREATE TABLE products (
   name VARCHAR(255)
   );
 
+  
+
 
  
 
@@ -65,8 +67,8 @@ insert into kleuren (name) values ('blauw');
 insert into kleuren (name) values ('geel');
 insert into kleuren (name) values ('terquoise');
 insert into kleuren (name) values ('zwart');
-  insert into kleuren (name) values ('groen');
-  insert into kleuren (name) values ('roze');
+insert into kleuren (name) values ('groen');
+insert into kleuren (name) values ('roze');
 
 insert into rating (name) values ('⭐⭐⭐');
 insert into rating (name) values ('⭐⭐');
@@ -77,8 +79,14 @@ insert into rating (name) values ('⭐');
   /* de 1:n samenvoegen tabellen*/
   
 
-
 SELECT productiejaren.id, productiejaren.name FROM productiejaren
 INNER JOIN products
 ON productiejaren.id = products.productiejaar_id
 
+  /* aangezien de concole bij 2 van bij elkaargevoegde tabellen error geeft, zet ik hem als commentaar neer*/
+
+  /*
+  SELECT productiejaren.id, productiejaren.name FROM productiejaren
+INNER JOIN products
+ON productiejaren.id = products.productiejaar_id
+*/
