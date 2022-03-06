@@ -10,12 +10,11 @@ html, body {
 }
 
 img.fotoMidden {
-    float:center;
-    margin-right: 30px;
+    float:right;
     width: 200px;
- margin-right: 250px;
+ margin-right: 450px;
   margin-left: 305px;
-  margin-bottem: 150px;
+  margin-bottem: 1000px;
 }
 
 .tekstLinks {
@@ -29,11 +28,17 @@ img.fotoMidden {
   border-color: #ecbaf2; 
   }
 
-img.fotoRechts {
-    float:center;
-    margin-right: 10px;
-    width: 200px ;
-
+img.fotoLinks {
+    float: left;
+ margin-right: 100px;
+    width: 100px ;
+  margin-top: 10px;
+  border: 10px;
+  margin-bottem: 1000px;
+ 
+  
+}
+  
 footer {
   margin: 20px;
   font-size: 12px;
