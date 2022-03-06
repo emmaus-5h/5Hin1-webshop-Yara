@@ -1,5 +1,16 @@
 /* all pages */
 
+html, body {
+    height: 100%;
+    padding: 1%;
+    background-color: #B8E2F2;;  
+    
+    color: #121212;
+    font-family: cursive ;
+}
+
+
+
 footer {
   margin: 20px;
   font-size: 12px;
@@ -74,6 +85,3 @@ footer {
   float: left;
 }
 
-body {
-font-family: fantasy ;
-  background-color: #B8E2F2;  
