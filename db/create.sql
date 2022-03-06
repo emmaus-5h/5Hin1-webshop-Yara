@@ -76,7 +76,9 @@ insert into rating (name) values ('⭐');
 
   /* de 1:n samenvoegen tabellen*/
   
-SELECT * FROM products JOIN productiejaren ON  productiejaren.id = products.productiejaar_id
 
-SELECT * FROM products JOIN rating ON products.id = products.rating_id
-  
+
+SELECT productiejaren.name FROM productiejaren
+INNER JOIN products
+ON productiejaren.id = products.productiejaar_id
+
