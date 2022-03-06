@@ -80,7 +80,7 @@ insert into rating (name) values ('⭐');
   
 
 SELECT productiejaren.id, productiejaren.name FROM productiejaren
-INNER JOIN products
+  JOIN products
 ON productiejaren.id = products.productiejaar_id
 
   /* aangezien de console bij 2 van bij elkaargevoegde tabellen error geeft, zet ik hem als commentaar neer*/
