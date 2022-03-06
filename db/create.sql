@@ -78,7 +78,7 @@ insert into rating (name) values ('⭐');
   
 
 
-SELECT productiejaren.name FROM productiejaren
+SELECT productiejaren.id, productiejaren.name FROM productiejaren
 INNER JOIN products
 ON productiejaren.id = products.productiejaar_id
 
