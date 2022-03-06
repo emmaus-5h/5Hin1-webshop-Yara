@@ -14,7 +14,7 @@ CREATE TABLE products (
   rating_id INTEGER
   );
 
-  CREATE TABLE productiejaar (
+  CREATE TABLE productiejaren (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR(255)
   );
@@ -55,9 +55,9 @@ insert into products (name, description, code, price, model, productiejaar_id, k
   insert into products (name, description, code, price, model, productiejaar_id, kleuren_id, rating_id) values ('Pink Flamingo', 'Vrolijk hoesje met roze flamingos', '492662523-2', 14, 'iPhone 11 en iPhone 13' , 1, 8, 3);
   insert into products (name, description, code, price, model, productiejaar_id, kleuren_id, rating_id) values ('Tropical leaves', 'Basic hoesje met tropische bladeren', '492662523-4', 14, 'iPhone 11' , 1, 7, 1);
 
-insert into productiejaar (name) values ('2020');
-insert into productiejaar (name) values ('2021'); 
-insert into productiejaar (name) values ('2022');
+insert into productiejaren (name) values ('2020');
+insert into productiejaren (name) values ('2021'); 
+insert into productiejaren (name) values ('2022');
 
 insert into kleuren (name) values ('overige');
 insert into kleuren (name) values ('beige');
@@ -74,17 +74,9 @@ insert into rating (name) values ('⭐');
 
 
 
-  SELECT products.id , products.code ,
-  products.name ,
-  products.description ,
-  products.price ,
-  products.model ,
-  products.productiejaar_id ,
-  products.kleuren_id,
-  products.rating_id,
-  productiejaar.id,
-  productiejaar.name
-FROM products
- JOIN productiejaar ON products.productiejaar_id = productiejaar.name 
+  /* de 1:n samenvoegen tabellen*/
+  
+SELECT * FROM products JOIN productiejaren ON  productiejaren.id = products.productiejaar_id
 
+SELECT * FROM products JOIN rating ON products.id = products.rating_id
   
