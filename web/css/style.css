@@ -3,13 +3,37 @@
 html, body {
     height: 100%;
     padding: 1%;
-    background-color: #B8E2F2;;  
+    background-color: #B8E2F2; 
     
     color: #121212;
     font-family: cursive ;
 }
 
+img.fotoRechts {
+    float:right;
+    margin-right: 30px;
+    width: 200px;
+   padding: 10px ; 
+  border-style: dotted;
+  border-width: 1em;
+  border-color: #f2bae3; 
+}
 
+
+
+.tekstRechts {
+  float: right;
+  width: 400px;
+  margin-right: 30px;
+  border-style: dotted;
+  border-width: 1em;
+  border-color: #f2bae3;
+  }
+
+img.fotoMidden {
+    float:center;
+    margin-right: 110px;
+    width: 200px ;
 
 footer {
   margin: 20px;
@@ -53,6 +77,7 @@ footer {
   height: inherit; 
   margin-bottom: 20px;
   margin-top: 20px;
+
 }
 
 .product img {
